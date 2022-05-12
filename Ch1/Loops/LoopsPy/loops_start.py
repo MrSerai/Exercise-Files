@@ -32,8 +32,8 @@ print("\n---------")
 
 
 # but we use the same "for" keyword
-myCharacters = "Man this is one long string! i can't believe i choose such a long string... oh when will it end!? the pain! the agony!!! Just Kidding :)"
-for chars in myCharacters: 
+my_characters = "Man this is one long string! i can't believe i choose such a long string... oh when will it end!? the pain! the agony!!! Just Kidding :)"
+for chars in my_characters: 
     if chars==")":
         print(chars,end=" ")
 
@@ -42,18 +42,18 @@ for chars in myCharacters:
 print("\n---------")
 
 # TODO: if you really need an index, you can use enumerate()
-for i,c in enumerate(myCharacters):
+for i,c in enumerate(my_characters):
     print(str(i)+", "+c+", ",end=" ")
 print("\n---------")
 
 
 # TODO: Similarly, there's only a while loop in python and no do-while, which
 # is just syntactic sugar for a loop that always executes at least once
-continueIterating = True
+continue_iterating = True
 i = 0
-while(continueIterating):
+while(continue_iterating):
     print("Number: ",i)
     i+=1
 
     if i >100:
-        continueIterating=False
+        continue_iterating=False

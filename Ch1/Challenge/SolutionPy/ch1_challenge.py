@@ -1,19 +1,19 @@
 from ast import Pass
 
 
-tswellaPele=True
-tallyNumber=0
-userInput=""
+tswella_pele=True
+tally_number=0
+user_input=""
 
 print("Enter a number to start the tally,Enter 'quit' to stop")
 
-while(tswellaPele):
+while(tswella_pele):
     try: #got try from the solution  O_O
-        userInput=input()
-        if userInput=="quit":
-            tswellaPele=False
+        user_input=input()
+        if user_input=="quit":
+            tswella_pele=False
         else:
-            tallyNumber+=int(userInput)
-            print(tallyNumber)
+            tally_number+=int(user_input)
+            print(tally_number)
     except ValueError:
         Pass
