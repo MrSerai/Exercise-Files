@@ -1,4 +1,4 @@
-# Python for the C# Developer by Joe Marini
+
 # Example code file for loops
 
 # the Python for loop always acts as an iterator - the typical
@@ -6,23 +6,54 @@
 
 # TODO: to iterate over a count, you create a numerical iterator with range()
 
+#the line below forLoop is to print a range of numbers within the range of 11. 
+#within that loop there is an if statement to make sure that there is no comma printed after the last number returned
+
+for i in range(11):     
+    if i==10:
+         print(i) 
+    else:
+        print(i, end=", ")  
+
+
 print("\n---------")
 
+for i in range(-11,12,2):
+    if i==11:
+         print(i) 
+    else:
+        print(i, end=", ") 
 
+          
 print("\n---------")
 
 # TODO: iterating over a collection or string is the same as with C# foreach,
-# but we use the same "for" keyword
-thestr = "Hello World!"
 
+
+
+# but we use the same "for" keyword
+myCharacters = "Man this is one long string! i can't believe i choose such a long string... oh when will it end!? the pain! the agony!!! Just Kidding :)"
+for chars in myCharacters: 
+    if chars==")":
+        print(chars,end=" ")
+
+    else:
+        print(chars,", ",end=" ")
 print("\n---------")
 
 # TODO: if you really need an index, you can use enumerate()
-
+for i,c in enumerate(myCharacters):
+    print(str(i)+", "+c+", ",end=" ")
 print("\n---------")
 
 
 # TODO: Similarly, there's only a while loop in python and no do-while, which
 # is just syntactic sugar for a loop that always executes at least once
-keepgoing = True
+continueIterating = True
 i = 0
+while(continueIterating):
+    print("Number: ",i)
+    i+=1
+
+    if i >100:
+        continueIterating=False
