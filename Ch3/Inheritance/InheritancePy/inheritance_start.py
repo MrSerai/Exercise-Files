@@ -1,12 +1,15 @@
 # Exercise file for Python for the C# Developer LinkedIn Learning course by Joe Marini
-
+class Publication:
+    def __init__(self,title,price):
+        self._title = title
+        self._price = price
 
 class Book:
     def __init__(self, title, author, price):
         # properties that start with _ are a hint that they should be considered private
-        self._title = title
+        
         self._author = author
-        self._price = price
+        
 
     # public properties can be indicated with a property decorator
     # this one creates a getter
